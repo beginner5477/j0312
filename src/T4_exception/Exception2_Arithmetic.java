@@ -1,0 +1,17 @@
+package T4_exception;
+
+//실행예외(Runtime exception)
+public class Exception2_Arithmetic {
+	public static void main(String[] args) {
+		int su1 = 10;
+		int su2 = 0;
+		try {
+			System.out.println(su1 / su2);
+			System.out.println("정상처리됨.");
+		} catch (ArithmeticException e) {
+//			e.printStackTrace();
+			System.out.println("예외처리" + e.getMessage());
+		}
+		System.out.println("작업끝.");
+	}
+}
